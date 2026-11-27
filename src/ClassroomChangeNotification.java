@@ -1,4 +1,6 @@
 public class ClassroomChangeNotification extends Notification {
+    private static final String BODY_FORMAT = "в аудиторию %d";
+
     private final int classroom;
 
     public ClassroomChangeNotification(String title, int classroom) {
@@ -8,6 +10,6 @@ public class ClassroomChangeNotification extends Notification {
 
     @Override
     protected String formatBody() {
-        return "в аудиторию " + classroom;
+        return String.format(BODY_FORMAT, classroom);
     }
 }

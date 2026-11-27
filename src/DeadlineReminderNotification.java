@@ -1,4 +1,6 @@
 public class DeadlineReminderNotification extends Notification {
+    private static final String BODY_FORMAT = "%s до %s";
+
     private final String workName;
     private final String deadline;
 
@@ -10,6 +12,6 @@ public class DeadlineReminderNotification extends Notification {
 
     @Override
     protected String formatBody() {
-        return workName + " до " + deadline;
+        return String.format(BODY_FORMAT, workName, deadline);
     }
 }
