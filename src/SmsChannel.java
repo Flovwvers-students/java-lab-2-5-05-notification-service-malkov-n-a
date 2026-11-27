@@ -1,8 +1,8 @@
 public class SmsChannel implements NotificationChannel {
-    public static final String CHANNEL_ID = "sms";
-
     private static final String MISSING_PHONE_MESSAGE = "Отсутствует телефон";
     private static final String DELIVERY_FORMAT = "SMS -> %s (%s): %s%n";
+
+    public static final String CHANNEL_ID = "sms";
 
     @Override
     public String id() {

@@ -30,14 +30,14 @@ public class NotificationServiceTest {
             "Push -> Борис (ID 2): Напоминание о сдаче лабораторной № 5 до 13 ноября"
     );
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         testMainOutput();
         testSingleFormatting();
         testMissingContacts();
         System.out.println(SUCCESS_MESSAGE);
     }
 
-    private static void testMainOutput() throws Exception {
+    private static void testMainOutput() {
         ByteArrayOutputStream outputBuffer = new ByteArrayOutputStream();
         PrintStream originalOutput = System.out;
 

@@ -1,8 +1,8 @@
 public class EmailChannel implements NotificationChannel {
-    public static final String CHANNEL_ID = "email";
-
     private static final String MISSING_EMAIL_MESSAGE = "Отсутствует email";
     private static final String DELIVERY_FORMAT = "Email -> %s (%s): %s%n";
+
+    public static final String CHANNEL_ID = "email";
 
     @Override
     public String id() {

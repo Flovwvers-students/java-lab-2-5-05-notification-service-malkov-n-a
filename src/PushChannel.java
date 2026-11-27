@@ -1,8 +1,8 @@
 public class PushChannel implements NotificationChannel {
-    public static final String CHANNEL_ID = "push";
-
     private static final String MISSING_ID_MESSAGE = "Отсутствует ID";
     private static final String DELIVERY_FORMAT = "Push -> %s (ID %s): %s%n";
+
+    public static final String CHANNEL_ID = "push";
 
     @Override
     public String id() {
